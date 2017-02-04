@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<HTML lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather Pulse</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/weather-page.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="page-header">
+            <h1 id="brand">Weather Pulse</h1>
+            <form id="page-search">
+                <input id = 'search' type="search" placeholder="Search by city, zipcode" name="q">
+                <input type="submit" name="submit">
+            </form>
+        </header>
+        <nav id="page-nav">
+            <ul>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Greensville</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Franklin, ID</h1>
+            <img id="weather-sum" alt="Weather Summary" src ="#" >
+
+            <ul id="hi-low">
+
+                <li><img id="weather-pic" alt="Weather Summary" src ="#" ></li>
+                <li>Sunny</li>
+                <li>
+                    <p>High <strong>75&deg;<sup>F</sup></strong></p>
+                </li>
+                <li>
+                    <p>Low <strong>46&deg;<sup>F</sup></strong></p>
+                </li>
+            </ul>
+            <ul id="precipt-wind">
+                <li>
+                    <p>Precipitation
+                        <br>0%</p>
+                </li>
+                <li id="wind-row">
+                    <p>Wind
+                        <br> 1-5 MPH
+                        <br> Southwest</p>
+                </li>
+
+            </ul>
+            <aside>
+                <ul>
+                    <li>
+                        <p>23 &deg;<sup>C</sup></p>
+                    </li>
+                    <li>
+                        <p>7 &deg;<sup>C</sup></p>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            <section id="city-left"><h2>Default City</h2></section>
+            <section id="city-right"><h2>Default City</h2></section>
+        </footer>
+
+    </div>
+</body>
+
+</HTML>
