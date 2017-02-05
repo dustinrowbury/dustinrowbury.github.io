@@ -14,7 +14,7 @@
         <header id="page-header">
             <h1 id="brand">Weather Pulse</h1>
             <form id="page-search">
-                <input id = 'search' type="search" placeholder="Search by city, zipcode" name="q">
+                <input id='search' type="search" placeholder="Search by city, zipcode" name="q">
                 <input type="submit" name="submit">
             </form>
         </header>
@@ -25,22 +25,26 @@
             </ul>
         </nav>
         <main>
-            <h1>Franklin, ID</h1>
-            <img id="weather-sum" alt="Weather Summary" src ="#" >
+            <h1><p class="contain-place">Franklin</p><p class = "contain-place" id="state"> ID</p></h1>
+            <img class="weather-sum" alt="Weather Summary" src="pics/Status-weather-clear-icon.png">
+            <p id="weather-sum">Sunny</p>
 
+
+            <li>
+
+
+            </li>
             <ul id="hi-low">
-
-                <li><img id="weather-pic" alt="Weather Summary" src ="#" ></li>
-                <li>Sunny</li>
                 <li>
-                    <p>High <strong>75&deg;<sup>F</sup></strong></p>
+                    <p id="hi">High <strong>90&deg;<sup>F</sup></strong></p>
                 </li>
                 <li>
-                    <p>Low <strong>46&deg;<sup>F</sup></strong></p>
+                    <p id="low">Low <strong>66&deg;<sup>F</sup></strong></p>
+
                 </li>
             </ul>
             <ul id="precipt-wind">
-                <li>
+                <li id = 'prec'>
                     <p>Precipitation
                         <br>0%</p>
                 </li>
@@ -51,20 +55,13 @@
                 </li>
 
             </ul>
-            <aside>
-                <ul>
-                    <li>
-                        <p>23 &deg;<sup>C</sup></p>
-                    </li>
-                    <li>
-                        <p>7 &deg;<sup>C</sup></p>
-                    </li>
-                </ul>
-            </aside>
+
         </main>
         <footer>
-            <section id="city-left"><h2>Default City</h2></section>
-            <section id="city-right"><h2>Default City</h2></section>
+            <section id="city-left">
+                <h2>Boise, ID</h2></section>
+            <section id="city-right">
+                <h2>Idaho Falls, ID</h2></section>
         </footer>
 
     </div>
