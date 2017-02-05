@@ -72,12 +72,14 @@ footer section {
 }
 
 nav li{
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
     list-style: none;
     display: block;
     margin-left: -35px;
-    font-size: .85em;
-    margin-top: -50px;
+    font-size: .75em;
+    margin-top: -32px;
 }
 
 #state{
@@ -132,4 +134,10 @@ main h1{
 #city-left{
     margin-left: 10%;
     float: left;
+}
+footer img{
+    margin-top: 80px;
+        clear: left;
+
+
 }
