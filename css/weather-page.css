@@ -17,6 +17,7 @@ header form {
 }
 
 #search {
+    margin-right: 100px;
     float: right;
     width: 35%;
 }
@@ -88,7 +89,8 @@ nav li{
 }
 .weather-sum{
     float: right;
-    margin-top: -230px;
+    margin-top: -200px;
+    margin-right: 120px
 
 
 }
@@ -110,13 +112,13 @@ main h1{
     float: right;
     clear: right;
     margin-top: -50px;
-    margin-right: 92px;
+    margin-right: 220px;
     font-size: 1.35em;
 }
 
 #wind-row{
     margin-top: -100px;
-    margin-left: 300px;
+    margin-left: 200px;
     font-size: 1.5em
 }
 
@@ -126,7 +128,7 @@ main h1{
 }
 
 #city-right{
-    margin-right: 10%;
+    margin-right: 30%;
     float: right;
 
 }
