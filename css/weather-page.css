@@ -89,8 +89,9 @@ nav li{
 }
 .weather-sum{
     float: right;
-    margin-top: -200px;
-    margin-right: 120px
+    margin-top: -100px;
+    margin-right: -95px
+
 
 
 }
@@ -112,7 +113,7 @@ main h1{
     float: right;
     clear: right;
     margin-top: -50px;
-    margin-right: 220px;
+
     font-size: 1.35em;
 }
 
