@@ -8,24 +8,25 @@
 }
 
 #brand {
-    font-size: 1.5;
-    width: 35%
+    font-size: 1em;
+
 }
 
-header form {
-    margin-top: 10px;
-}
+#page-search #search{
 
-#search {
-    margin-right: 100px;
-    float: right;
-    width: 35%;
+    width: 40%;
 }
 
 #page-header {
-    width: 100%;
-    margin-left: 85px;
+    width: 85%;
+    margin-left: 13%;
     display: inline-block;
+}
+header form{
+    margin-right: .1em;
+    float: right;
+    margin-top: .7em;
+    width: 62%;
 }
 
 #page-header h1 {
@@ -36,32 +37,31 @@ body {
     background-color: lightblue;
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    font-size: 1em;
+    font-size: 14px;
     font-family: arial, "arial thin", sans-serif;
 }
-#hi-low li{
 
-    display: block;
-    width 100;
-    font-size: 3em;
-    margin-top: -50px;
+ul{
+    margin: 0;
 }
 
-.cel{
+#hi-low li {
+    display: block;
+    font-size: 3em;
+    margin-top: -1em;
+}
+
+.cel {
     display: inline-block;
     float: right;
     margin-top: -400px;
-    width: 50%
-    font-size = 90px;
-
+    width: 50% font-size=90px;
 }
 
 main li {
     list-style: none;
     display: inline-block;
     width: 12%;
-
 }
 
 #wrapper {
@@ -72,75 +72,78 @@ footer section {
     display: inline-block;
 }
 
-nav li{
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    list-style: none;
+#page-nav:before {
+    content: 'Menu';
     display: block;
-    margin-left: -35px;
-    font-size: .75em;
-    margin-top: -32px;
+    position: absolute;
+    top: .7em;
+    padding-left: .2em;
 }
 
-#state{
+#page-nav ul {
+    display: none;
+}
+
+#state {
     display: block;
     margin-left: 180px;
 }
-.weather-sum{
+
+.weather-sum {
     float: right;
-    margin-top: -100px;
-    margin-right: -95px
-
-
-
+    margin-top: -9em;
+    width: 75%;
 }
 
-main{
+main {
     margin: 7px;
     border-top: solid DarkBlue;
     border-bottom: Solid DarkBlue;
 }
-main h1{
+
+main h1 {
     font-size: 3em;
 }
-.contain-place{
+
+.contain-place {
     display: block;
     width: 50%;
-
 }
-#weather-sum{
+
+#weather-sum {
     float: right;
     clear: right;
-    margin-top: -50px;
-
+    margin-top: -2em;
     font-size: 1.35em;
+    width: 44%;
 }
 
-#wind-row{
-    margin-top: -100px;
-    margin-left: 200px;
+#precipt-wind{
+    text-align: center;
+}
+
+#wind-row {
+    margin-top: -20em;
+    width: 49%;
     font-size: 1.5em
 }
 
-#prec{
-    margin-top: -25px;
-    font-size: 1.25em
+#prec {
+   width: 49%;
+    font-size: 2em
 }
 
-#city-right{
+#city-right {
     margin-right: 5%;
     float: right;
-
 }
 
-#city-left{
+#city-left {
     margin-left: 5%;
     float: left;
 }
-footer img{
 
+footer img {
     margin-top: 80px;
-        clear: left;
-
+    clear: left;
 }
