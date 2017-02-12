@@ -146,14 +146,16 @@ main h1 {
     float: left;
 }
 .d-city{
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 footer img {
     margin-top: 80px;
     clear: left;
     width: 20em;
+    width: 50%
 }
+
 
 @media screen and (min-width:480px){
 
