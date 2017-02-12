@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<HTML lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather Pulse</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/weather-page2.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="row">
+            <header id="page-header">
+                <h1 id="brand">Weather Pulse</h1>
+                <form id="page-search">
+                    <input id='search' class='search' type="search" placeholder="Search by city, zipcode" name="q">
+                    <input class='search' type="submit" name="submit">
+                </form>
+            </header>
+            <nav id="page-nav">
+                <ul>
+                    <li><a href="#">Franklin</a></li>
+                    <li><a href="#" id='spr'>Springfield</a></li>
+                    <li><a href="#">Greensville</a></li>
+                </ul>
+
+        </nav>
+        </div>
+        <main>
+            <div class="row">
+<!--                <ul>-->
+                    <div class="colunm">
+<!--                        <li>-->
+                            <h1>Franklin<br><span id="state"> ID</span></h1>
+<!--                        </li>-->
+                    </div>
+                    <div class="colunm">
+<!--                        <li >-->
+                            <img id="sum-of-weather" class="weather-sum" alt="Weather Summary" src="pics/Status-weather-clear-icon.png">
+                            <p id="weather-sum" class="weather-sum">Sunny</p>
+<!--                        </li>-->
+                    </div>
+            </div>
+
+            <div class="row">
+                <ul id="hi-low">
+                    <div class="short-colunm">
+                        <li>
+                            <p id="hi">High <strong>90&deg;<sup>F</sup></strong></p>
+                        </li>
+                    </div>
+                    <div class="short-colunm">
+                        <li>
+                            <p id="low">Low <strong>66&deg;<sup>F</sup></strong></p>
+                    </div>
+                    <div class="short-colunm" id="celcius-colunm">
+
+
+                    </div>
+
+                    </li>
+                </ul>
+            </div>
+            <ul id="precipt-wind">
+                <li id='prec'>
+                    <p>Precip.
+                        <br>0%</p>
+                </li>
+                <li id="wind-row">
+                    <p>Wind
+                        <br> 1-5 MPH
+                        <br> Southwest</p>
+                </li>
+
+            </ul>
+
+        </main>
+        <footer>
+            <section id="city-left">
+                <h2>Boise, ID</h2></section>
+            <section id="city-right">
+                <h2>Idaho Falls, ID</h2></section>
+            <img src="pics/small-weather.png" alt='mobile-plan' style="width: 400px;height: 400px">
+        </footer>
+
+    </div>
+</body>
+
+</HTML>
