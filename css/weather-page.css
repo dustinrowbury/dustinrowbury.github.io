@@ -87,7 +87,7 @@ footer section {
     float: right;
     margin-top: -9em;
     width: 75%;
-    max-width: 20em;
+    max-width: 25em;
 }
 
 main {
@@ -104,18 +104,14 @@ main h1 {
     display: block;
     width: 50%;
 }
-.align-sun{
-align-content: center;
-}
 
 #weather-sum {
-/*
     float: right;
     clear: right;
     margin-top: -2em;
     font-size: 1.35em;
     width: 44%;
-*/
+    max-width: 10em;
 }
 
 #precipt-wind{
@@ -127,9 +123,7 @@ align-content: center;
     width: 49%;
     font-size: 1.5em
 }
-#sum .align-sun{
-    text-align: center;
-}
+
 #prec {
    width: 49%;
     font-size: 2em
@@ -156,18 +150,37 @@ footer img {
 
 @media screen and (min-width:480px){
 
+    body{
+        font-size: 20px;
+    }
     .hourly-list{
         display: inline-block;
         background-color: darkslateblue;
         color:cornsilk;
         text-align: center;
             padding: 0;
+        border: solid darkblue;
     }
 
-/*
-    .weather-sum{
-        max-width: 25em;
+    #precipt-wind{
+        text-align:left;
+        width: 50%;
+
     }
-*/
+
+    #wind-row {
+        margin-top: -20em;
+        width: 55%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #prec {
+        width: 40%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+
 }
 
