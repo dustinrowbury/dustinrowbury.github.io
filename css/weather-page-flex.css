@@ -145,7 +145,13 @@ main h1 {
     font-size: 2em;
 }
 .hourly-list{
-    display: none;
+    display: flex;
+    background-color: darkslateblue;
+    color:cornsilk;
+    padding: 0;
+    border: solid darkblue;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 #city-right {
