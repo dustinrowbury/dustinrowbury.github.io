@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<HTML lang="en-us">
+
+<head>
+    <!-- comment -->
+    <meta charset="utf-8">
+    <title>My page</title>
+    <script type="text/javascript">
+        /* Input: How much ater are you drinking
+         *  Process: Decide if it is enough
+         *  Output: Tell you if it is enough
+         */
+
+        function drinkWaterMale() {
+
+            var wDrank;
+
+            // assign variables
+
+            wDrank = parseFloat(document.getElementById('water').value);
+
+            if (wDrank >= 96 ){
+                window.alert("Good job you drank enough water!!!")
+            }
+
+        }
+
+        function drinkWaterFemale() {
+
+            var wDrank;
+
+            // assign variables
+
+            wDrank = parseFloat(document.getElementById('water').value);
+
+            if (wDrank >= 70.4 && wDrank < 94){
+                window.alert("Good job you drank enough water!!!")
+            }
+            else if( wDrank < 70.4){
+                document.getElementById('water').innerHTML == "Now, Now Tori don't forget to drink water. The clear stuff not the yellow stuff from the lab.";
+                window.alert("Now, Now Tori don't forget to drink water. The clear stuff not the yellow stuff from the lab.")
+            }
+            else{
+                window.alert("WOW you drank a lot don't forget to pee!!!!!")
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+   Please enter how much water you have drank today:<br><input type="text" id="water">ounces<br>
+    <button type="button" onclick="drinkWaterMale()">Dustin</button>
+    <button type="button" onclick="drinkWaterFemale()">Tori</button>
+
+
+    <!-- This is just a place holder  -->
+    <div id="water"></div>
+
+</body>
+
+</HTML>
