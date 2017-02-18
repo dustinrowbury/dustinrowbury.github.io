@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Weather Pulse</title>
+    <title>Weather Pulse - Franklin</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/weather-page-flex.css">
 </head>
@@ -13,16 +13,17 @@
     <div id="wrapper">
         <header id="page-header">
             <h1 id="brand" class="head">Weather Pulse</h1>
-            <form id="page-search" class='head'>
+<!--            <form id="page-search" class='head'> Makes the flex box css not behave properly -->
                 <input  id="search" type="search" placeholder="Search by city, zipcode" name="q">
                 <input   type="submit" name="submit" id="submit">
-            </form>
+<!--            </form>-->
         </header>
         <nav id="page-nav">
             <ul>
-                <li><a href="#">Franklin</a></li>
+                <li><a href="weather-page.html">Franklin</a></li>
+                <li><a href="greenville_weather.html">Greensville</a></li>
                 <li><a href="#" id='spr'>Springfield</a></li>
-                <li><a href="#">Greensville</a></li>
+
             </ul>
         </nav>
         <main>
@@ -33,10 +34,10 @@
 
             <ul id="hi-low">
                 <li>
-                    <p id="hi">High <strong>90&deg;<sup>F</sup></strong><br><span class="cel-temp">32&deg;<sup>C</sup></span></p>
+                    <p id="hi">High <strong>90&deg;<sup>F</sup></strong><span class="cel-temp">32&deg;<sup>C</sup></span></p>
                 </li>
                 <li>
-                    <p id="low">Low <strong>66&deg;<sup>F</sup></strong><br><span class="cel-temp">19&deg;<sup>C</sup></span></p>
+                    <p id="low">Low <strong>66&deg;<sup>F</sup></strong><span class="cel-temp">19&deg;<sup>C</sup></span></p>
 
                 </li>
             </ul>

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<HTML lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Weather Pulse - Greenville</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/weather-page-flex.css">
+</head>
+
+<body>
+<div id="wrapper">
+<header id="page-header">
+<h1 id="brand" class="head">Weather Pulse</h1>
+<!--            <form id="page-search" class='head'> Makes the flex box css not behave properly -->
+<input  id="search" type="search" placeholder="Search by city, zipcode" name="q">
+<input   type="submit" name="submit" id="submit">
+<!--            </form>-->
+</header>
+<nav id="page-nav">
+<ul>
+<li><a href="weather-page.html">Franklin</a></li>
+    <li><a href="greenville_weather.html">Greensville</a></li>
+    <li><a href="#" id='spr'>Springfield</a></li>
+
+</ul>
+</nav>
+<main>
+<h1><span class="contain-place">Greenville</span><span class = "contain-place" id="state"> SC</span></h1>
+<div id="sum">
+<p><img class="weather-sum"  alt="Weather Summary" src="pics/thunder-icon.png"><br>
+<span id="weather-sum" >Afternoon Thunderstorms</span></p></div>
+
+<ul id="hi-low">
+<li>
+<p id="hi">High <strong>84&deg;<sup>F</sup></strong><span class="cel-temp">29&deg;<sup>C</sup></span></p>
+</li>
+<li>
+<p id="low">Low <strong>55&deg;<sup>F</sup></strong><span class="cel-temp">13&deg;<sup>C</sup></span></p>
+
+</li>
+</ul>
+<ul id="precipt-wind">
+<li id='prec'>
+Precip.
+<br>70%
+</li>
+<li id="wind-row">
+Wind
+<br> 15-20 MPH
+<br> West
+</li>
+
+</ul>
+<ul class="hourly-list">
+<li class="hour"><span>12am</span> <br> 55&deg;</li>
+<li class="hour"><span>1am</span> <br> 56&deg;</li>
+<li class="hour"><span>2am</span> <br> 56&deg;</li>
+<li class="hour"><span>3am</span> <br> 56&deg;</li>
+<li class="hour"><span>4am</span> <br> 57&deg;</li>
+<li class="hour"><span>5am</span> <br> 57&deg;</li>
+<li class="hour"><span>6am</span> <br> 58&deg;</li>
+<li class="hour"><span>7am</span> <br> 62&deg;</li>
+<li class="hour"><span>8am</span> <br> 63&deg;</li>
+<li class="hour"><span>9am</span> <br> 67&deg;</li>
+<li class="hour"><span>10am</span> <br> 70&deg;</li>
+<li class="hour"><span>11am</span> <br> 73&deg;</li>
+<li class="hour"><span>12pm</span> <br> 77&deg;</li>
+<li class="hour"><span>1pm</span> <br> 80&deg;</li>
+<li class="hour"><span>2pm</span> <br> 84&deg;</li>
+<li class="hour"><span>3pm</span> <br> 83&deg;</li>
+<li class="hour"><span>4pm</span> <br> 83&deg;</li>
+<li class="hour"><span>5pm</span> <br> 80&deg;</li>
+<li class="hour"><span>6pm</span> <br> 79&deg;</li>
+<li class="hour"><span>7pm</span> <br> 74&deg;</li>
+<li class="hour"><span>8pm</span> <br> 70&deg;</li>
+<li class="hour"><span>9pm</span> <br> 68&deg;</li>
+<li class="hour"><span>10pm</span> <br> 60&deg;</li>
+<li class="hour"><span>11pm</span> <br> 58&deg;</li>
+<li></li>
+</ul>
+
+</main>
+<footer>
+<div id="city-left">
+<a href="#" class="d-city">Boise, ID</a></div>
+<div id="city-right">
+<a href="#" class="d-city">Idaho Falls, ID</a></div>
+<img src="pics/small-weather.png" alt='mobile-plan'>
+<img id="pic-m" src="pics/weather-pic-m2.png" alt="medium-plan">
+<img src="pics/weather-pic-l.png" alt="large-plan">
+
+</footer>
+
+</div>
+</body>
+
+</HTML>
