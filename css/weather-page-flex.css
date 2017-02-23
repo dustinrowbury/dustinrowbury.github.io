@@ -9,7 +9,7 @@
 
 #brand {
     margin: 0;
-    font-size: 1em;
+    font-size: 1.8em;
 
 }
 
@@ -21,17 +21,16 @@
     display: flex;
     padding-top: 4px;
 }
-#page-header form{
-    display: flex
-}
 
-#search{
+header #search{
     width: 40%;
+    max-height: 2.5em;
 }
 
-#submit{
+header #submit{
     padding: 0;
     margin: 0;
+  max-height: 2.5em;
 }
 
 
@@ -178,7 +177,7 @@ footer img {
 @media screen and (min-width:480px){
 
     body{
-        font-size: 18px;
+        font-size: 14px;
     }
 
     #hi-low li {
@@ -203,13 +202,23 @@ footer img {
 
 
 
-}
-@media screen and (min-width:600px){
-    #page-header #brand{
-        font-size: 1.5em;
-    }
 
 }
+@media screen and (min-width:590px){
+    body{
+        font-size: 18px;
+    }
+    #brand{
+        font-size: 1.8em;
+    }
+    #page-nav{
+
+        margin-top: -2em;
+
+}
+    @media screen and (min-width:753px){
+
+    }
 
 @media screen and (min-width:1012px){
 
@@ -217,6 +226,11 @@ footer img {
 
         font-size: 4em;
     }
+    #page-nav{
+
+        margin-top: -3.5em;
+    }
+
     #precipt-wind{
       clear: both;
 
@@ -236,6 +250,9 @@ footer img {
         display: flex;
         justify-content: space-around;
     }
+    #brand{
+        font-size: 3.2em;
+    }
 
 
 
@@ -253,9 +270,8 @@ footer img {
         width: 7%;
     }
 
-
     #brand{
-        font-size: 1.1em
+        font-size: 3.5em;
     }
 
 }

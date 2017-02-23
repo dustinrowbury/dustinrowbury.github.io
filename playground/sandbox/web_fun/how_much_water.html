@@ -28,6 +28,7 @@
         function drinkWaterFemale() {
 
             var wDrank;
+            var message;
 
             // assign variables
 
@@ -37,8 +38,9 @@
                 window.alert("Good job you drank enough water!!!")
             }
             else if( wDrank < 70.4){
-                document.getElementById('water').innerHTML == "Now, Now Tori don't forget to drink water. The clear stuff not the yellow stuff from the lab.";
-                window.alert("Now, Now Tori don't forget to drink water. The clear stuff not the yellow stuff from the lab.")
+                message = "Now, Now Tori don't forget to drink water. The clear stuff not the yellow stuff from the lab.";
+                document.getElementById('message').innerHTML = message;
+//                window.alert("Now, Now Tori don't forget to drink water. The clear stuff not the yellow stuff from the lab.")
             }
             else{
                 window.alert("WOW you drank a lot don't forget to pee!!!!!")
@@ -56,7 +58,7 @@
 
 
     <!-- This is just a place holder  -->
-    <div id="water"></div>
+    <div id="message"></div>
 
 </body>
 
