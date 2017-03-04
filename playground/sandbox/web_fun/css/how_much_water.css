@@ -1,4 +1,12 @@
 body{
+    font-size: 20px;
+    font-family: sans-serif;
+    border: solid darkblue;
+    background-image: url(../pics/drops-of-water-water-nature-liquid.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
 
-
+#message {
+    font-size: 3em;
 }

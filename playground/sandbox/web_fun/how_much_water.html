@@ -5,6 +5,7 @@
     <!-- comment -->
     <meta charset="utf-8">
     <title>My page</title>
+    <link rel="stylesheet" type="text/css" href ="css/how_much_water.css" media="screen">
     <script type="text/javascript">
         /* Input: How much ater are you drinking
          *  Process: Decide if it is enough
@@ -14,13 +15,15 @@
         function drinkWaterMale() {
 
             var wDrank;
+            var message;
 
             // assign variables
 
             wDrank = parseFloat(document.getElementById('water').value);
 
             if (wDrank >= 96 ){
-                window.alert("Good job you drank enough water!!!")
+                message = "Good job you drank enough water!!!";
+                document.getElementById('message').innerHTML = message;
             }
 
         }
@@ -35,15 +38,18 @@
             wDrank = parseFloat(document.getElementById('water').value);
 
             if (wDrank >= 70.4 && wDrank < 94){
-                window.alert("Good job you drank enough water!!!")
+                message = "Good job you drank enough water!!!";
+
+                document.getElementById('message').innerHTML = message;
             }
             else if( wDrank < 70.4){
                 message = "Now, Now Tori don't forget to drink water. The clear stuff not the yellow stuff from the lab.";
                 document.getElementById('message').innerHTML = message;
-//                window.alert("Now, Now Tori don't forget to drink water. The clear stuff not the yellow stuff from the lab.")
             }
             else{
-                window.alert("WOW you drank a lot don't forget to pee!!!!!")
+                message = "WOW you drank a lot don't forget to pee!!!!!";
+
+                document.getElementById('message').innerHTML = message;
             }
 
 

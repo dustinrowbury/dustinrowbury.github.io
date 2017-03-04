@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<HTML lang="en-us">
+
+<head>
+    <!-- comment -->
+    <meta charset="utf-8">
+    <title>My page</title>
+    <script type="text/javascript">
+        /* Input: ingredients that you have
+         *  Process: find recipes that you can make
+         *  Output: Recipes that you can make with what you have
+         */
+
+        // Variables recipes
+        var numIngred = 3;
+        var jabamalaya = ['shrimp', 'spicey sausage', 'jambalaya season']
+        var haveIng ='';
+        var ingedCount = 0
+
+        function sortIngred(){
+            var shrimp = document.getElementById('shrimp').value;
+            var sSausage = document.getElementById('sSausage').value;
+            var jambSeason = document.getElementById('jumbSeason').value;
+            var ingred = [shrimp, sSausage, JambSeason];
+            for(var i = 0; i < numIngred; i++){
+                if(ingred[i]){
+
+                    haveIng[ingedCount] = ingred[i];
+                }
+
+
+            }
+
+        }
+
+        function decideDinner() {
+            var ingredCChipCookies = ['flour', 'sugar', 'salt', 'baking-powder', 'chocolate-chips', 'crisco'];
+
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>The Dinner Advisor</h1>
+    </header>
+    <h2>He will help you decide what to eat make for dinner</h2>
+    <form>
+
+<!--
+        <h2>Grains</h2>
+        <input type="checkbox" name="flour" value='flour'>Flour
+        <input type="checkbox" name="rice" value="rice">Rice
+        <input type="checkbox" name="noodles" value="noodles">Noodles
+-->
+
+        <h2>Meats and Proteins</h2>
+<!--
+        <input type="checkbox" name="chicken" value="true">Chicken
+        <input type="checkbox" name="eggs" value="true">Eggs
+-->
+        <input type="checkbox" name="shrimp" value="shrimp">Shrimp
+        <input type="checkbox" name="sSausage" value="spicey sausage">Spicey Sausage
+
+
+<!--
+        <h2>Milk Products</h2>
+        <input type="checkbox" name="butter" value="true">Butter
+        <input type="checkbox" name="milk" value="true">Milk
+-->
+
+<!--
+        <h2>Baking Goods</h2>
+        <input type="checkbox" name="sugar" value="true">Sugar
+        <input type="checkbox" name="choclate-chips" value="true">Chocolate chips
+        <input type="checkbox" name="crisco" value="true">Crisco
+-->
+<!--
+
+        <h2>Seasonings</h2>
+        <input type="checkbox" name="salt" value="true">Salt
+-->
+        <input type="checkbox" name="jumbSeason" value="jambalaya season">Jambalaya Seasoning
+
+<!--
+        <h2>Others</h2>
+        <input type="checkbox" name="baking-powder" value="true">Baking powder
+        <input type="checkbox" name="baking-soda" value="true">Baking soda
+-->
+
+
+
+
+
+
+<!--
+
+        <input type="checkbox" name="crisco" value="true">Crisco
+        <input type="checkbox" name="crisco" value="true">Crisco
+        <input type="checkbox" name="crisco" value="true">Crisco
+-->
+
+
+
+    </form>
+    <select name='ingredients'>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+        <option value="dessert">Dessert</option>
+    </select>
+    <input type="text" id="something">
+    <button type="button" onclick="sortIngred()">submit</button>
+
+    <!-- This is just a place holder  -->
+    <div id="message"></div>
+
+</body>
+
+</HTML>
