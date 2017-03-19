@@ -1,0 +1,36 @@
+<script>
+function moveForward(space) {
+for(var i = 0; i < space; i++){
+queue.push(funcForward);
+}
+}
+
+
+function moveBackward(space) {
+for(var i = 0; i < space; i++){
+queue.push(funcBackward);
+}
+}
+
+
+
+function turnLeft(quartTurnS) {
+for(var i = 0; i < quarterTurns; i++){
+queue.push(funcTurnLeft);
+}
+}
+
+
+
+function turnRight(quartTurnS) {
+for(var i = 0; i < quarterTurns; i++){
+queue.push(funcTurnRight);
+}
+}
+
+
+function run() {
+moveForward(5);
+turnLeft(2);
+}
+</script>
