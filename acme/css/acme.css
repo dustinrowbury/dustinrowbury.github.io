@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: .85em;
+    background-image: url(../images/site/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+li a:hover {
+    opacity: .65;
+}
+
+li {
+    list-style: none;
+}
+
+#wrapper {
+    background-color: #ffffff
+}
+
+header {
+    margin-right: 2em;
+    margin-left: 2em;
+    background-color: #ffffff;
+    color: #de2226;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#nav-list{
+    padding-left: .2em;
+    padding-right: .2em;
+    background-color: #808080;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#nav-list li {}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#topInfo {
+    display: flex;
+    justify-content: center;
+    color: #de2226
+}
+
+#pIMG {
+    position: relative;
+    width: 100%;
+}
+
+#hButton{
+    width: 7em;
+}
+#over{
+    position: absolute;
+    top: 35em;
+    font-size: 0.5em;
+    left: 60%;
+    padding: 0;
+}
+
+
+#home a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+@media screen and (min-width:480px) {
+    body{
+
+        font-size: 1.2em
+    }
+
+    #firstC {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        padding-left: .2em;
+        height: 15em;
+
+    }
+
+    #hButton{
+        width: 12%;
+        height: 3em;
+    }
+
+    #firstC a {
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1050px) {
+    body{
+        font-size: 2.2em;
+    }
+    #firstC{
+        width: 49%;
+    }
+    #secondC{
+        display: flex;
+        flex-flow: column Wrap;
+        width: 49%;
+    }
+    #home #allC{
+        display: flex;
+        flex-flow: column wrap;
+        font-size: .5em;
+        height: 25em;
+    }
+
+}

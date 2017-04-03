@@ -2,6 +2,7 @@
 // Get weather data from wunderground.com
 function getData(input) {
     // Get the data from the wunderground API
+    console.log(input + "this is the output");
     $.ajax({
         url: "//api.wunderground.com/api/eb16b21402b86f82/geolookup/conditions/q/"
         + input + ".json"
