@@ -10,6 +10,7 @@ $.ajax({
         console.log(traps);
         //        $("#cover").fadeOut(250);
         $('#nav-list').html("<li><a href='acme.html'>Home</a></li><li><a href='#'>Anvils</a></li><li><a href='#'>Explosives</a></li><li><a href='#'>Decoys</a></li><li><a href='#'>Traps</a></li>");
+        $("#menuObjs").css("display", 'none');
 
         // Get the name clicked "p" in the front of variable stands for product
         $("#page-nav").on("click", "a", function (evt) {
@@ -17,22 +18,38 @@ $.ajax({
             var navClick = $(this).text();
             console.log(navClick);
 
+
             // This is all the information from the product
-            var pName = data[navClick]["name"];
-            console.log(pName);
-            var pPath = data[navClick]['path'];
-            var pDesc = data[navClick]['description'];
-            var pManu = data[navClick]['manufacturer'];
-            var pPrice = data[navClick]['price'];
-            var pReview = data[navClick]['reviews'];
-            console.log(pManu);
+            if (navClick != "Home") {
+                var pName = data[navClick]["name"];
 
-            $("#home").hide();
+                var pPath = data[navClick]['path'];
+                var pDesc = data[navClick]['description'];
+                var pManu = data[navClick]['manufacturer'];
+                var pPrice = data[navClick]['price'];
+                var pReview = data[navClick]['reviews'];
 
-            $("#pTitle").html(pName);
-            $('#pImg').html('<img alt="Content Picture" src=' + pPath + ' >');
-            $('#pContent').html(pDesc);
-            $('#madeBy').html(pManu);
+
+
+
+
+                $("#home").css("display", 'none');
+
+                $("#menuObjs").css("display", 'inherit');
+                $("#pTitle").html('Home');
+                $('#titleTop').html('Acme ' + pName);
+                $("#pTitle").html(pName);
+                $('#pImgi').html('<img id="jsonImg" alt="Content Picture" src=' + pPath + ' >');
+                $('#pContent').html(pDesc);
+                $('#madeBy').html('<span class="bold">Made By: </span>' + pManu);
+                $("#pReviews").html('<span class="bold">Reviews: </span>' + pReview +'/5 stars');
+                $("#pPrice").html('<span class="bold">Price: $</span>' +  pPrice);
+            } else {
+                $("#home").css('display', 'inherit');
+                $("#menuObjs").css("display", 'none');
+                $('#titleTop').html('Acme Home');
+
+            }
 
 
             // This add the information to the HTML
@@ -45,4 +62,3 @@ $.ajax({
 
     }
 });
-
