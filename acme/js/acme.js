@@ -37,7 +37,7 @@ $.ajax({
 
                 $("#menuObjs").css("display", 'inherit');
                 $("#pTitle").html('Home');
-                $('#titleTop').html('Acme ' + pName);
+                $('#titleTop').html(pName + ' Acme ');
                 $("#pTitle").html(pName);
                 $('#pImgi').html('<img id="jsonImg" alt="Content Picture" src=' + pPath + ' >');
                 $('#pContent').html(pDesc);
@@ -47,7 +47,7 @@ $.ajax({
             } else {
                 $("#home").css('display', 'inherit');
                 $("#menuObjs").css("display", 'none');
-                $('#titleTop').html('Acme Home');
+                $('#titleTop').html('Home Acme');
 
             }
 
