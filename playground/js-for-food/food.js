@@ -10,7 +10,13 @@ var haveIng ='';
 var ingedCount = 0
 
 function sortIngred(){
-    var shrimp = document.getElementById('shrimp').value;
+
+    var inputIngred = document.forms[0];
+    var numFoods = countChecks(inputIngred);
+    console.log(numFoods);
+    var foods = new Array(numFoods);
+    var shrimp = document.getElementById('shrimp');
+    console.log(shrimp);
     var sSausage = document.getElementById('sSausage').value;
     var jambSeason = document.getElementById('jumbSeason').value;
     var ingred = [shrimp, sSausage, JambSeason];
@@ -28,4 +34,15 @@ function sortIngred(){
 function decideDinner() {
     var ingredCChipCookies = ['flour', 'sugar', 'salt', 'baking-powder', 'chocolate-chips', 'crisco'];
 
+}
+
+function countChecks(ingredsList){
+    var numFoods = 0;
+    for(var i = 0; i < ingredsList.length; i++){
+        if(ingredsList[i].checked){
+            numFoods++;
+        }
+    }
+
+    return numFoods;
 }

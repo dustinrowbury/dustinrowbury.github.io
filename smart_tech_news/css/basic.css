@@ -1,0 +1,80 @@
+body {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #26798e;
+
+}
+
+h1{
+
+    align-self: center;
+
+}
+
+.sections {
+
+    border: solid;
+    border-bottom-color: #b7730c;
+    background-color: dimgrey
+
+
+}
+
+#primary_new_suggestion {
+
+    display: flex;
+    flex-direction: column;
+    height: 21em;
+    max-height: 21em;
+    max-width: 95%;
+    padding-bottom: 0.5em;
+
+
+
+
+}
+
+#first-pref-img {
+    max-height: 20em;
+    max-width: 100%;
+}
+
+#best_suggestion_id {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    font-size: 1.25em
+
+}
+
+#secondry_suggetions {
+
+    padding-top: 1.35em;
+    height: 13em;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#suggestion2 {
+
+    width: 45%;
+
+}
+
+#suggestion3 {
+
+    width: 45%;
+
+}
+
+#powered-by {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.75em;
+    position:  absolute;
+    margin-left: 79%;
+    width: 20%;
+
+}

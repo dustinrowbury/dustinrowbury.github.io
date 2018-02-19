@@ -1,0 +1,35 @@
+#circle-display {
+    width: 60em;
+    height: 60em;
+    border: solid;
+    border-width: 0.65em;
+    border-color: blue;
+    border-radius: 60em;
+    margin-top: 40%;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 10em;
+
+}
+
+.mini-circle {
+
+
+
+}
+
+
+#interaction {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icons {
+    display: flex;
+    width: 15%;
+    height: 15%;
+
+}

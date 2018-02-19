@@ -1,0 +1,16 @@
+{
+    "Cookies":{
+        "name": "Cookies",
+        "path": "",
+        "description": "Yummy cookies",
+        "ingredients": {
+            "flour": "flour",
+            "sugar": "sugar",
+            "eggs": "eggs",
+            "brown-sugar": "brown sugar",
+            "vanilla": "vanilla",
+            "salt": "salt",
+
+        }
+    }
+}
